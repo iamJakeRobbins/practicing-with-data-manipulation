@@ -9,9 +9,8 @@ router.get('/', (req,res)=>{
 				queries.getAllActorData()
 					.then((aData) =>{
 						let movieData = queries.joinData(dData, aData)
-								res.send(movieData)
-								// res.render('index', {
-							// })
+								res.render('index', {movieData:movieData
+							})
 
 
 		})

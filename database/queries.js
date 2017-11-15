@@ -31,8 +31,8 @@ function joinData(dData, aData){
 		let movieID = aData[i]['movie_id']
 		for (var j = 0; j < movieArr.length; j++) {
 			if (aData[i].title === movieArr[j][movieID].title) {
-				if(movieObj[movieID].actors.indexOf(aData[i].name) === -1){
-					movieObj[movieID].actors.push(aData[i].name)
+				if(movieObj[movieID].actors.indexOf(' ' + aData[i].name) === -1){
+					movieObj[movieID].actors.push(' ' + aData[i].name)
 				}
 			}
 

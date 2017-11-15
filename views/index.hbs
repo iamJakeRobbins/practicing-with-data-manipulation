@@ -7,9 +7,10 @@
   <body>
     <h1>Movies</h1>
 
-		{{#each allData}}
+		{{#each movieData}}
 			<h3>{{title}}</h3>
-			<h4>by: {{name}}</h4>
+			<h4>by: {{director}}</h4>
+			<h4>starring: {{actors}}</h4>
 		{{/each}}
 
     <form action="/addMovie" method="post">
